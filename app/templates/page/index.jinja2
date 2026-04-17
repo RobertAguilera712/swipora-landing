@@ -1,0 +1,99 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="container  text-center">
+    <div class="row  align-items-center  my-5 gy-4">
+        <div class="col-md-6 text-start order-md-1 order-2">
+            <h1 class="main-heading">Swipora</h1>
+            <h2 class="main-subheading">Aprende Inglés con Flashcards</h2>
+            <p>Aprende inglés de manera sin esfuerzo con flashcards. El algoritmo de aprendizaje se adapta a ti y a tu
+                ritmo</p>
+            <div class="row">
+                <div class="col-6">
+                    <a href="#"
+                       class="btn btn-primary d-block mb-3"
+                       rel="noopener"><i class="bi bi-apple"></i> App
+                        Store</a>
+                </div>
+                <div class="col-6">
+                    <a href="#"
+                       class="btn btn-primary d-block mb-3"
+                       rel="noopener"><i class="bi bi-google-play"></i>
+                        Google Play</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-2 order-1">
+            <img class="rounded-2"
+                 src="{{ url_for('static', filename='img/app.png') }}"
+                 alt=""
+                 width="80%">
+        </div>
+    </div>
+</div>
+<div class="bg-primary my-3 py-5">
+
+    <div class="container">
+
+        <h1 class="text-center">Diseña para ti</h1>
+        <h3 class="text-center">La app que aprende como tú</h3>
+        <div class="row mt-4 g-4">
+            <div class="col-md-6">
+                <div class="bg-white p-5 rounded-5">
+                    <div class="">
+                        <h3 class="">Special title treatment</h3>
+                        <p class="">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#"
+                           class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-con p-5 rounded-5">
+                    <div class="">
+                        <h3 class="">Special title treatment</h3>
+                        <p class="">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#"
+                           class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="bg-dark p-5 rounded-5">
+                    <div class="row ">
+                        <div class="col-6">
+                            <h3 class="">Special title treatment</h3>
+                            <p class="">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#"
+                               class="btn btn-primary">Go somewhere</a>
+                        </div>
+
+                        <div class="col-6">
+                            <img class="img-fluid rounded-5"
+                                 src="{{ url_for('static', filename='img/graph.png') }}"
+                                 alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" my-5 p-5">
+    <div class="container ">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="bg-con p-5 rounded-5 text-center">
+                <div class="">
+                    <h1 class="text-dark">¿Listo para unirte a <span class="text-primary">Swipora</span>?</h1>
+                    <p class="">Unete a esta comunidad de gente que quiere superarse y aprender inglés</p>
+                    <a href="#"
+                       class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

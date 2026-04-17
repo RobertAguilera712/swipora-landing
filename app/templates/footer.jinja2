@@ -1,0 +1,44 @@
+{% macro footer() %}
+<footer class="py-3 mt-auto footer footer-top-shadow">
+    <div class="container px-5">
+        <div class="row align-items-center text-center text-md-start">
+
+            <!-- Left -->
+            <div class="col-md-4 mb-2 mb-md-0">
+                <span>&copy; Roberto Aguilera {{ current_year }}</span>
+            </div>
+
+            <!-- Center -->
+            <div class="col-md-4 mb-2 mb-md-0">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary"
+                           href="#">Privacy policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">Terms of service</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right -->
+            <div class="col-md-4 text-md-end">
+                <a href="#"
+                   class="text-decoration-none me-3">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#"
+                   class="text-decoration-none me-3">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="#"
+                   class="text-decoration-none">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+{% endmacro %}

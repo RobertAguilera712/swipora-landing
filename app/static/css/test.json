@@ -1,0 +1,71 @@
+ tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                   --tertiary-dim: #5f4e00;
+                   --surface-container-highest: #d8daff;
+                   --surface: #f8f5ff;
+                   --secondary: #006a28;
+                   --tertiary-container: #fdd400;
+                   --on-error: #ffefee;
+                   --primary-container: #779dff;
+                   --tertiary: #6d5a00;
+                   --surface-container-lowest: #ffffff;
+                   --outline: #6f749e;
+                   --on-secondary-fixed: #004819;
+                   --surface-tint: #0053cc;
+                   --primary-fixed: #779dff;
+                   --on-tertiary: #fff2ce;
+                   --secondary-fixed: #5cfd80;
+                   --secondary-container: #5cfd80;
+                   --outline-variant: #a6aad7;
+                   --on-surface: #272c51;
+                   --secondary-fixed-dim: #4bee74;
+                   --surface-container-high: #dfe0ff;
+                   --on-tertiary-fixed: #433700;
+                   --on-background: #272c51;
+                   --primary-fixed-dim: #608fff;
+                   --tertiary-fixed: #fdd400;
+                   --surface-dim: #cdd1ff;
+                   --tertiary-fixed-dim: #edc600;
+                   --on-primary-container: #001f56;
+                   --inverse-on-surface: #959ac6;
+                   --error-container: #fb5151;
+                   --on-error-container: #570008;
+                   --on-surface-variant: #545981;
+                   --primary: #0053cc;
+                   --on-primary: #f1f2ff;
+                   --inverse-primary: #5b8cff;
+                   --error: #b31b25;
+                   --background: #f8f5ff;
+                   --surface-bright: #f8f5ff;
+                   --on-primary-fixed-variant: #00286a;
+                   --error-dim: #9f0519;
+                   --on-secondary: #cfffce;
+                   --inverse-surface: #05092f;
+                   --surface-container-low: #f0efff;
+                   --on-secondary-container: #005d22;
+                   --on-secondary-fixed-variant: #006827;
+                   --surface-variant: #d8daff;
+                   --primary-dim: #0048b3;
+                   --on-tertiary-container: #594a00;
+                   --surface-container: #e6e6ff;
+                   --secondary-dim: #005d22;
+                   --on-primary-fixed: #000000;
+                   --on-tertiary-fixed-variant: #645300
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
