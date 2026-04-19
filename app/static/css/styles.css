@@ -63,6 +63,10 @@
     background-color: var(--surface-container) !important;
 }
 
+[data-animate] {
+    opacity: 0;
+}
+
 .bg-con {
     background-color: var(--surface-variant) !important;
 }
@@ -140,6 +144,7 @@ h4,
 h5,
 h6 {
     font-weight: 700 !important;
+    color: var(--on-surface);
 }
 
 .card-title {
@@ -156,9 +161,24 @@ h6 {
     background-color: #292B51 !important;
 
     p,
+    h1,
+    h2,
+    h3,
+    h4,
+    ul,
     h5 {
         color: var(--on-primary) !important;
     }
+
+    i {
+        color: var(--secondary-fixed) !important;
+    }
+}
+
+.navbar,
+.footer {
+    background-color: rgba(248, 245, 255, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 
@@ -176,7 +196,7 @@ nav .navbar-brand,
 nav .nav-link,
 .footer {
     font-weight: 600;
-    color: var(--on-surface) !important;
+    color: var(--primary) !important;
 }
 
 nav .nav-link {
@@ -205,16 +225,15 @@ nav .nav-link:hover[href] {
 }
 
 .form-control {
-    background-color: #1b1b1b;
-    color: #eee;
-    border-color: #7b7265;
+    color: var(--on-surface);
+    /* border-color: var(--on-surface); */
 }
 
 .form-control:focus {
-    background-color: #1b1b1b;
-    color: #eee;
-    border-color: #fe86a7;
-    box-shadow: 0 0 0 .25rem rgba(253, 13, 84, .25);
+    /* background-color: #1b1b1b; */
+    color: var(--on-surface);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 .25rem rgba(0, 83, 204, 0.25);
 }
 
 #txtComment {
@@ -234,4 +253,8 @@ nav .nav-link:hover[href] {
 
 #social-nav {
     font-size: 1.5rem;
+}
+
+a {
+    color: var(--on-surface);
 }
