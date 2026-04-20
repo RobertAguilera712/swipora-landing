@@ -6,5 +6,6 @@ __pycache__
 # app/static/img
 # .flaskenv
 .DS_Store
+/app/build/
 # .env_var
 # /.env_var
