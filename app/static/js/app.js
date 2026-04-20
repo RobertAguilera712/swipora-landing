@@ -20,6 +20,9 @@ forms.forEach(form => {
         const formData = new FormData(form);
         const data = new URLSearchParams(formData);
 
+        console.log("FORM:", form);
+        console.log("DATA:", [...formData.entries()]);
+
         try {
             const response = await fetch(API_URL, {
                 method: 'POST',
@@ -31,7 +34,7 @@ forms.forEach(form => {
 
             if (response.ok) {
                 console.log("SENT");
-                
+
                 // message.textContent = 'Success! You\'re on the list.';
                 // message.style.color = 'green';
                 form.reset();

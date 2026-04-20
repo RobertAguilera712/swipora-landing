@@ -1,13 +1,13 @@
-{% macro waiting_form() %}
+{% macro waiting_form(id_suffix) %}
 <form class="row g-3">
     <div class="col-8">
-        <label for="email"
+        <label for="email-{{ id_suffix }}"
                class="visually-hidden">Correo electrónico</label>
         <input type="email"
                class="form-control"
                name="email"
                required
-               id="email"
+               id="email-{{ id_suffix }}"
                placeholder="Correo electrónico">
     </div>
     <div class="col-4">
