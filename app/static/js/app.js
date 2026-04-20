@@ -20,30 +20,52 @@ forms.forEach(form => {
         const formData = new FormData(form);
         const data = new URLSearchParams(formData);
 
-        console.log("FORM:", form);
-        console.log("DATA:", [...formData.entries()]);
 
         try {
             const response = await fetch(API_URL, {
                 method: 'POST',
+                mode: 'no-cors',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 body: data
             });
 
-            if (response.ok) {
-                console.log("SENT");
+            form.reset();
 
-                // message.textContent = 'Success! You\'re on the list.';
-                // message.style.color = 'green';
-                form.reset();
-            } else {
-                console.log("Error");
-                // throw new Error('Submission failed');
-            }
+            Swal.fire({
+                icon: 'success',
+                title: '¡Estás dentro!',
+                text: 'Te avisaremos cuando Swipora esté disponible 🚀',
+                confirmButtonText: 'Cerrar',
+                customClass: {
+                    confirmButton: 'btn btn-primary'
+                },
+                buttonsStyling: false // 🔥 allows Bootstrap styling
+            });
+
+
+            // if (response.ok) {
+            //     console.log("SENT");
+
+            //     // message.textContent = 'Success! You\'re on the list.';
+            //     // message.style.color = 'green';
+            //     form.reset();
+            // } else {
+            //     console.log("Error");
+            //     // throw new Error('Submission failed');
+            // }
         } catch (error) {
-            console.log("Error");
+            Swal.fire({
+                icon: 'error',
+                title: 'Ups...',
+                text: 'Algo salió mal. Inténtalo de nuevo.',
+                confirmButtonText: 'Cerrar',
+                customClass: {
+                    confirmButton: 'btn btn-danger'
+                },
+                buttonsStyling: false
+            });
             // message.textContent = 'Error. Please try again.';
             // message.style.color = 'red';
         } finally {
