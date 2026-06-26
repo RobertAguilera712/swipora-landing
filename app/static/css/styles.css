@@ -247,7 +247,7 @@ nav .nav-link:hover[href] {
     font-size: 1.2rem;
 }
 
-.nav-link {
+.nav-link, .bi {
     color: var(--primary) !important;
 }
 
@@ -257,4 +257,14 @@ nav .nav-link:hover[href] {
 
 a {
     color: var(--on-surface);
+}
+
+.store-badge {
+    height: 60px;
+    width: auto;
+    transition: transform .2s ease;
+}
+
+.store-badge:hover {
+    transform: scale(1.05);
 }

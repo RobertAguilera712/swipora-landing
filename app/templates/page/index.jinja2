@@ -12,22 +12,27 @@
             <p>Memoriza sin esfuerzo con flashcards impulsadas por un algoritmo que se adapta a tu ritmo.
                 Estudia menos, aprende más.</p>
 
-            {{ waiting_form('hero') }}
+            <div class="d-flex flex-wrap gap-3 mt-4">
 
-            {# <div class="row">
-                <div class="col-6">
-                    <a href="#"
-                       class="btn btn-primary d-block mb-3"
-                       rel="noopener"><i class="bi bi-apple"></i> App
-                        Store</a>
-                </div>
-                <div class="col-6">
-                    <a href="#"
-                       class="btn btn-primary d-block mb-3"
-                       rel="noopener"><i class="bi bi-google-play"></i>
-                        Google Play</a>
-                </div>
-            </div> #}
+                <a href="https://apps.apple.com/mx/app/swipora/id6762106557?l=en-GB Swipora"
+                   target="_blank"
+                   rel="noopener">
+                    <img src="{{ url_for('static', filename='img/appstore.png') }}"
+                         alt="Download on the App Store"
+                         class="store-badge">
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=io.github.robertaguilera712.swipora&pcampaignid=web_share"
+                   target="_blank"
+                   rel="noopener">
+                    <img src="{{ url_for('static', filename='img/googleplay.png') }}"
+                         alt="Get it on Google Play"
+                         class="store-badge">
+
+                </a>
+
+            </div>
+
         </div>
         <div class="col-md-6 order-md-2 order-1"
              data-animate="animate__fadeInRight">
